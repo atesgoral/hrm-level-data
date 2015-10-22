@@ -18,8 +18,8 @@ const replacer = ( key, value ) =>
   
 const expand = str =>
   str.replace( 
-    /("\^\^\^)(\[ .* \])(\")/g, ( match, p1, p2 ) => 
-      p2.replace( /\\"/g, '"' )
+    /(?:"\^\^\^)(\[ .* \])(?:\")/g, ( match, a ) => 
+      a.replace( /\\"/g, '"' )
   )
   
 const stringify = obj =>
