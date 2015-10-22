@@ -26,12 +26,12 @@ levels.forEach(function (level) {
 out.push('    "number": ' + level.number + ',');
 out.push('    "name": ' + quote(level.name) + ',');
 if (level.floor) {
-out.push('    "floor": ' + map(level.floor) + ',');
+out.push('    "floor": ' + (level.floor instanceof Array ? list(level.floor) : map(level.floor)) + ',');
 }
 out.push('    "expect": [{');
-level.expect.forEach(function (expect) {
-out.push('        "inbox": ' + list(level.expect.inbox) + ',');
-out.push('        "outbox": ' + list(level.expect.outbox));
+level.expect.forEach(function (expectation) {
+out.push('        "inbox": ' + list(expectation.inbox) + ',');
+out.push('        "outbox": ' + list(expectation.outbox));
 out.push('    }, {');
 });
 out.pop();
