@@ -11,7 +11,6 @@ const format = arr =>
   `^^^[ ${
     arr.map( val => JSON.stringify( val ) ).join( ', ' )
   } ]`
-
   
 const replacer = ( key, value ) =>
   isArrayOfPrimitive( value ) ? format( value ) : value
