@@ -1,6 +1,6 @@
 {
   "name": "hrm-level-data",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Human Resource Machine level data",
   "main": "index.json",
   "repository": {
@@ -11,9 +11,11 @@
     "hrm"
   ],
   "author": "Ates Goral <ates@magnetiq.com> (http://magnetiq.com/)",
-  "contributors": [{
-    "name": "Nik Coughlin",
-    "email": "nrkn.com@gmail.com"
-  }],
+  "contributors": [
+    {
+      "name": "Nik Coughlin",
+      "email": "nrkn.com@gmail.com"
+    }
+  ],
   "license": "MIT"
 }
