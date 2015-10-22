@@ -11,5 +11,9 @@
     "hrm"
   ],
   "author": "Ates Goral <ates@magnetiq.com> (http://magnetiq.com/)",
+  "contributors": [{
+    "name": "Nik Coughlin",
+    "email": "nrkn.com@gmail.com"
+  }],
   "license": "MIT"
 }
