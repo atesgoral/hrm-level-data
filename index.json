@@ -370,4 +370,32 @@
         "size": 8,
         "speed": 63
     }
+}, {
+    "number": 38,
+    "name": "Digit Exploder",
+    "challenge": {
+        "size": 30,
+        "speed": 165
+    }
+}, {
+    "number": 39,
+    "name": "Re-Coordinator",
+    "challenge": {
+        "size": 14,
+        "speed": 76
+    }
+}, {
+    "number": 40,
+    "name": "Prime Factory",
+    "challenge": {
+        "size": 28,
+        "speed": 399
+    }
+}, {
+    "number": 41,
+    "name": "Sorting Floor",
+    "challenge": {
+        "size": 34,
+        "speed": 714
+    }
 }]
