@@ -1,0 +1,17 @@
+{
+    version: '0.0.0',
+    gameVersion: '0.0.0',
+    levels: [{
+        number: 1,
+        name: 'Mail Room',
+        configurations: [{
+            input: [ ],
+            expectedOutput: [ ],
+            floor: {
+            }
+        }],
+        sizePar: 6,
+        speedPar: 6
+    }, {
+    }]
+}
