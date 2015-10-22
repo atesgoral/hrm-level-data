@@ -8,10 +8,10 @@ Install with: `npm install hrm-level-data`
 Then:
 
 ```
-var levels = require('hrm-level-data/index.json');
+var levels = require('hrm-level-data');
 ```
 
-`levels` will be an array of level objects (Node.js will parse the JSON for you).
+`levels` will be an array of level objects.
 
 An excerpt:
 
@@ -63,7 +63,7 @@ An excerpt:
 
 ## Data Schema
 
-Each level object has the following properties:
+The data is in the form of an array of level objects. Each level object has the following properties:
 
 ### number
 _Number_. The level number, as it appears in the game. Note that the level numbers are not sequential because there are cutscenes that take up level numbers. The first level is 1. The first cutscene, Coffee Time, takes up level 5, and so on.
