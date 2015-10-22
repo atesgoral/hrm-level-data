@@ -47,7 +47,7 @@
         "speed": -1
     }
 }, {
-    "number": 5,
+    "number": 6,
     "name": "Rainy Summer",
     "floor": {},
     "expect": [{
@@ -59,7 +59,7 @@
         "speed": -1
     }
 }, {
-    "number": 6,
+    "number": 7,
     "name": "Zero Exterminator",
     "floor": {},
     "expect": [{
@@ -71,7 +71,7 @@
         "speed": -1
     }
 }, {
-    "number": 7,
+    "number": 8,
     "name": "Tripler Room",
     "floor": {},
     "expect": [{
@@ -83,7 +83,7 @@
         "speed": -1
     }
 }, {
-    "number": 8,
+    "number": 9,
     "name": "Zero Preservation Initiative",
     "floor": {},
     "expect": [{
@@ -95,7 +95,7 @@
         "speed": -1
     }
 }, {
-    "number": 9,
+    "number": 10,
     "name": "Octoplier Suite",
     "floor": {},
     "expect": [{
@@ -107,7 +107,7 @@
         "speed": -1
     }
 }, {
-    "number": 10,
+    "number": 11,
     "name": "Sub Hallway",
     "floor": {},
     "expect": [{
@@ -119,7 +119,7 @@
         "speed": -1
     }
 }, {
-    "number": 11,
+    "number": 12,
     "name": "Tetracontiplier",
     "floor": {},
     "expect": [{
@@ -131,7 +131,7 @@
         "speed": -1
     }
 }, {
-    "number": 12,
+    "number": 13,
     "name": "Equalization Room",
     "floor": {},
     "expect": [{
@@ -143,7 +143,7 @@
         "speed": -1
     }
 }, {
-    "number": 13,
+    "number": 14,
     "name": "Maximization Room",
     "floor": {},
     "expect": [{
@@ -155,7 +155,7 @@
         "speed": -1
     }
 }, {
-    "number": 14,
+    "number": 16,
     "name": "Absolute Positivity",
     "floor": {},
     "expect": [{
@@ -167,7 +167,7 @@
         "speed": -1
     }
 }, {
-    "number": 15,
+    "number": 17,
     "name": "Exclusive Lounge",
     "floor": { "4": "0", "5": "1" },
     "expect": [{
@@ -179,7 +179,7 @@
         "speed": -1
     }
 }, {
-    "number": 16,
+    "number": 19,
     "name": "Countdown",
     "floor": {},
     "expect": [{
@@ -191,7 +191,7 @@
         "speed": -1
     }
 }, {
-    "number": 17,
+    "number": 21,
     "name": "Zero Terminated Sum",
     "floor": { "5": "0" },
     "expect": [{
@@ -203,7 +203,7 @@
         "speed": -1
     }
 }, {
-    "number": 18,
+    "number": 22,
     "name": "Fibonacci Visitor",
     "floor": { "9": "0" },
     "expect": [{
@@ -215,7 +215,7 @@
         "speed": -1
     }
 }, {
-    "number": 19,
+    "number": 23,
     "name": "The Littlest Number",
     "floor": {},
     "expect": [{
@@ -227,7 +227,7 @@
         "speed": -1
     }
 }, {
-    "number": 20,
+    "number": 24,
     "name": "Mod Module",
     "floor": {},
     "expect": [{
@@ -239,7 +239,7 @@
         "speed": -1
     }
 }, {
-    "number": 21,
+    "number": 25,
     "name": "Cumulative Countdown",
     "floor": { "5": "0" },
     "expect": [{
@@ -251,7 +251,7 @@
         "speed": -1
     }
 }, {
-    "number": 22,
+    "number": 26,
     "name": "Small Divide",
     "floor": { "9": "0" },
     "expect": [{
@@ -263,7 +263,7 @@
         "speed": -1
     }
 }, {
-    "number": 23,
+    "number": 28,
     "name": "Three Sort",
     "floor": {},
     "expect": [{
@@ -275,7 +275,7 @@
         "speed": -1
     }
 }, {
-    "number": 24,
+    "number": 29,
     "name": "Storage Floor",
     "floor": [ "N", "K", "A", "E", "R", "D", "O", "L", "Y", "J", "null", "null", "8" ],
     "expect": [{
@@ -287,7 +287,7 @@
         "speed": -1
     }
 }, {
-    "number": 25,
+    "number": 30,
     "name": "String Storage Floor",
     "floor": [ "G", "E", "T", "0", "T", "H", "0", "T", "A", "R", "0", "A", "W", "A", "K", "E", "0", "I", "S", "0", "X", "X", "X", "0" ],
     "expect": [{
@@ -299,7 +299,7 @@
         "speed": -1
     }
 }, {
-    "number": 26,
+    "number": 31,
     "name": "String Reverse",
     "floor": { "14": "0" },
     "expect": [{
@@ -311,7 +311,7 @@
         "speed": -1
     }
 }, {
-    "number": 27,
+    "number": 32,
     "name": "Inventory Report",
     "floor": [ "B", "A", "X", "B", "C", "X", "A", "B", "A", "X", "C", "B", "A", "B", "0" ],
     "expect": [{
@@ -323,7 +323,7 @@
         "speed": -1
     }
 }, {
-    "number": 28,
+    "number": 34,
     "name": "Vowel Incinerator",
     "floor": [ "A", "E", "I", "O", "U", "0" ],
     "expect": [{
@@ -335,7 +335,7 @@
         "speed": -1
     }
 }, {
-    "number": 29,
+    "number": 35,
     "name": "Duplicate Removal",
     "floor": { "14": "0" },
     "expect": [{
@@ -347,7 +347,7 @@
         "speed": -1
     }
 }, {
-    "number": 30,
+    "number": 36,
     "name": "Alphabetizer",
     "floor": { "23": "0", "24": "10" },
     "expect": [{
@@ -359,7 +359,7 @@
         "speed": -1
     }
 }, {
-    "number": 31,
+    "number": 37,
     "name": "Scavenger Chain",
     "floor": { "0": "E", "1": "13", "3": "C", "4": "23", "10": "P", "11": "20", "13": "S", "14": "3", "20": "E", "21": "-1", "23": "A", "24": "10" },
     "expect": [{
