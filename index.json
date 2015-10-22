@@ -1,17 +1,18 @@
 {
-    version: '0.0.0',
-    gameVersion: '0.0.0',
+    version: "0.0.0",
+    gameVersion: "0.0.0",
     levels: [{
         number: 1,
-        name: 'Mail Room',
-        configurations: [{
+        name: "Mail Room",
+        floor: {},
+        expect: [{
             input: [ ],
-            expectedOutput: [ ],
-            floor: {
-            }
+            output: [ ],
         }],
-        sizePar: 6,
-        speedPar: 6
+        challenge: {
+            size: 6,
+            speed: 6
+        }
     }, {
     }]
 }
