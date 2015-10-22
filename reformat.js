@@ -31,18 +31,18 @@ out.push('    "floor": ' + map(level.floor) + ',');
 out.push('    "expect": [{');
 level.expect.forEach(function (expect) {
 out.push('        "inbox": ' + list(level.expect.inbox) + ',');
-out.push('        "outbox": ' + list(level.expect.outbox) + ',');
+out.push('        "outbox": ' + list(level.expect.outbox));
 out.push('    }, {');
 });
 out.pop();
 out.push('    }],');
 out.push('    "challenge": {');
 out.push('        "size": ' + number(level.challenge.size) + ',');
-out.push('        "speed": ' + number(level.challenge.speed) + ',');
+out.push('        "speed": ' + number(level.challenge.speed));
 out.push('    }');
 out.push('}, {');
 });
 out.pop();
 out.push('}]');
 
-console.log(out.join('\r\n'));
+console.log(out.join('\n'));
