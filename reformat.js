@@ -2,7 +2,9 @@ var levels = require('./index.json'),
     out = [];
 
 function quote(v) {
-    return '"' + v + '"'; // @todo Could add quote escaping, but there's no need at this point
+    return isNaN(v)
+        ? '"' + v + '"' // @todo Could add quote escaping, but there's no need at this point
+        : v;
 }
 
 function list(array) {
@@ -13,7 +15,7 @@ function list(array) {
 
 function map(obj) {
     return obj && Object.keys(obj).length
-        ? '{ ' + Object.keys(obj).map(function (key) { return quote(key) + ': ' + quote(obj[key]); }).join(', ') + ' }'
+        ? '{ ' + Object.keys(obj).map(function (key) { return '"' + key + '": ' + quote(obj[key]); }).join(', ') + ' }'
         : '{}';
 }
 
