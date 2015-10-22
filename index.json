@@ -3,8 +3,8 @@
     "name": "Mail Room",
     "floor": {},
     "expect": [{
-        "input": [ 1, 9, 4 ],
-        "output": [ 1, 9, 4 ]
+        "inbox": [ 1, 9, 4 ],
+        "outbox": [ 1, 9, 4 ]
     }],
     "challenge": {
         "size": 6,
@@ -15,8 +15,8 @@
     "name": "Busy Mail Room",
     "floor": {},
     "expect": [{
-        "input": [ "B", "O", "O", "T", "S", "E", "Q" ],
-        "output": [ "B", "O", "O", "T", "S", "E", "Q" ]
+        "inbox": [ "B", "O", "O", "T", "S", "E", "Q" ],
+        "outbox": [ "B", "O", "O", "T", "S", "E", "Q" ]
     }],
     "challenge": {
         "size": 3,
