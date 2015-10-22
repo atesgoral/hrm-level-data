@@ -104,7 +104,7 @@ _Number_. The maximum program size to meet the size challenge.
 #### speed
 _Number_. The maximum program run steps to meet the speed challenge.
 
-## Maintained by
+## Maintainers
 
 * [@atesgoral](https://github.com/atesgoral) (Ates Goral)
 * [@nrkn](https://github.com/nrkn) (Nik Coughlin)
