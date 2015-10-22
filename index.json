@@ -191,6 +191,18 @@
         "speed": 82
     }
 }, {
+    "number": 20,
+    "name": "Multiplication Workshop",
+    "floor": { "9": 0 },
+    "expect": [{
+        "inbox": [ 9, 4, 1, 7, 7, 0, 0, 8, 4, 2 ],
+        "outbox": [ 36, 7, 0, 0, 8 ]
+    }],
+    "challenge": {
+        "size": 15,
+        "speed": 109
+    }
+}, {
     "number": 21,
     "name": "Zero Terminated Sum",
     "floor": { "5": 0 },
