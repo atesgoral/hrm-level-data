@@ -4,7 +4,7 @@
     "floor": {},
     "expect": [{
         "input": [ 1, 9, 4 ],
-        "output": [ 1, 9, 4 ],
+        "output": [ 1, 9, 4 ]
     }],
     "challenge": {
         "size": 6,
@@ -16,7 +16,7 @@
     "floor": {},
     "expect": [{
         "input": [ "B", "O", "O", "T", "S", "E", "Q" ],
-        "output": [ "B", "O", "O", "T", "S", "E", "Q" ],
+        "output": [ "B", "O", "O", "T", "S", "E", "Q" ]
     }],
     "challenge": {
         "size": 3,
