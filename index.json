@@ -22,4 +22,400 @@
         "size": 3,
         "speed": 25
     }
+}, {
+    "number": 3,
+    "name": "Copy Floor",
+    "floor": [ "U", "J", "X", "G", "B", "E" ],
+    "expect": [{
+        "inbox": [ -99, -99, -99, -99 ],
+        "outbox": [ "B", "U", "G" ]
+    }],
+    "challenge": {
+        "size": 6,
+        "speed": 6
+    }
+}, {
+    "number": 4,
+    "name": "Scrambler Handler",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 4, 8, "A", "E", 2, 5 ],
+        "outbox": [ 8, 4, "E", "A", 5, 2 ]
+    }],
+    "challenge": {
+        "size": 7,
+        "speed": 21
+    }
+}, {
+    "number": 6,
+    "name": "Rainy Summer",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 3, 3, 1, 4, -3, 5, 0, -1 ],
+        "outbox": [ 6, 5, 2, -1 ]
+    }],
+    "challenge": {
+        "size": 6,
+        "speed": 24
+    }
+}, {
+    "number": 7,
+    "name": "Zero Exterminator",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 8, 0, -4, "A", 0, 0, 9, 0 ],
+        "outbox": [ 8, -4, "A", 9 ]
+    }],
+    "challenge": {
+        "size": 4,
+        "speed": 23
+    }
+}, {
+    "number": 8,
+    "name": "Tripler Room",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 7, -5, 5, 0 ],
+        "outbox": [ 21, -15, 15, 0 ]
+    }],
+    "challenge": {
+        "size": 6,
+        "speed": 24
+    }
+}, {
+    "number": 9,
+    "name": "Zero Preservation Initiative",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 2, 0, 1, "B", 0, 0, 6, 0 ],
+        "outbox": [ 0, 0, 0, 0 ]
+    }],
+    "challenge": {
+        "size": 5,
+        "speed": 25
+    }
+}, {
+    "number": 10,
+    "name": "Octoplier Suite",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 2, -1, 3, 0 ],
+        "outbox": [ 16, -8, 24, 0 ]
+    }],
+    "challenge": {
+        "size": 9,
+        "speed": 36
+    }
+}, {
+    "number": 11,
+    "name": "Sub Hallway",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 4, 5, 8, 4, -9, -9, 5, -3 ],
+        "outbox": [ 1, -1, -4, 4, 0, 0, -8, 8 ]
+    }],
+    "challenge": {
+        "size": 10,
+        "speed": 40
+    }
+}, {
+    "number": 12,
+    "name": "Tetracontiplier",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 2, -6, 5, 0 ],
+        "outbox": [ 80, -240, 200, 0 ]
+    }],
+    "challenge": {
+        "size": 14,
+        "speed": 56
+    }
+}, {
+    "number": 13,
+    "name": "Equalization Room",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 6, 1, 8, 8, 5, 0, -4, -4 ],
+        "outbox": [ 8, -4 ]
+    }],
+    "challenge": {
+        "size": 9,
+        "speed": 27
+    }
+}, {
+    "number": 14,
+    "name": "Maximization Room",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 4, 9, -8, -4, 9, 9, -6, -3 ],
+        "outbox": [ 9, -4, 9, -3 ]
+    }],
+    "challenge": {
+        "size": 10,
+        "speed": 34
+    }
+}, {
+    "number": 16,
+    "name": "Absolute Positivity",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 2, -6, -5, 0, -3, -7, 9 ],
+        "outbox": [ 2, 6, 5, 0, 3, 7, 9 ]
+    }],
+    "challenge": {
+        "size": 8,
+        "speed": 36
+    }
+}, {
+    "number": 17,
+    "name": "Exclusive Lounge",
+    "floor": { "4": 0, "5": 1 },
+    "expect": [{
+        "inbox": [ 3, 5, -2, -6, 1, -9, -8, 7 ],
+        "outbox": [ 0, 0, 1, 1 ]
+    }],
+    "challenge": {
+        "size": 12,
+        "speed": 28
+    }
+}, {
+    "number": 19,
+    "name": "Countdown",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 8, -5, 0, 3 ],
+        "outbox": [ 8, 7, 6, 5, 4, 3, 2, 1, 0, -5, -4, -3, -2, -1, 0, 0, 3, 2, 1, 0 ]
+    }],
+    "challenge": {
+        "size": 10,
+        "speed": 82
+    }
+}, {
+    "number": 21,
+    "name": "Zero Terminated Sum",
+    "floor": { "5": 0 },
+    "expect": [{
+        "inbox": [ 7, 7, 0, 2, -9, 8, 0, 0, 0, 2, -9, 1, 2, -8, 1, 0 ],
+        "outbox": [ 14, 1, 0, 0, -11 ]
+    }],
+    "challenge": {
+        "size": 10,
+        "speed": 72
+    }
+}, {
+    "number": 22,
+    "name": "Fibonacci Visitor",
+    "floor": { "9": 0 },
+    "expect": [{
+        "inbox": [ 5, 20 ],
+        "outbox": [ 1, 1, 2, 3, 5, 1, 1, 2, 3, 5, 8, 13 ]
+    }],
+    "challenge": {
+        "size": 19,
+        "speed": 156
+    }
+}, {
+    "number": 23,
+    "name": "The Littlest Number",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 8, 15, 2, 0, 19, 14, 8, 4, 0, 57, 47, 20, 44, 40, 0 ],
+        "outbox": [ 2, 4, 20 ]
+    }],
+    "challenge": {
+        "size": 13,
+        "speed": 75
+    }
+}, {
+    "number": 24,
+    "name": "Mod Module",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 5, 2, 6, 2, 4, 6, 0, 8 ],
+        "outbox": [ 1, 0, 4, 0 ]
+    }],
+    "challenge": {
+        "size": 12,
+        "speed": 57
+    }
+}, {
+    "number": 25,
+    "name": "Cumulative Countdown",
+    "floor": { "5": 0 },
+    "expect": [{
+        "inbox": [ 3, 3, 0, 8 ],
+        "outbox": [ 6, 6, 0, 36 ]
+    }],
+    "challenge": {
+        "size": 12,
+        "speed": 82
+    }
+}, {
+    "number": 26,
+    "name": "Small Divide",
+    "floor": { "9": 0 },
+    "expect": [{
+        "inbox": [ 9, 3, 7, 3, 3, 6, 0, 9 ],
+        "outbox": [ 3, 2, 0, 0 ]
+    }],
+    "challenge": {
+        "size": 15,
+        "speed": 76
+    }
+}, {
+    "number": 28,
+    "name": "Three Sort",
+    "floor": {},
+    "expect": [{
+        "inbox": [ 8, 5, 2, 3, 5, 8, 6, -1, 3, 9, 6, -1 ],
+        "outbox": [ 2, 5, 8, 3, 5, 8, -1, 3, 6, -1, 6, 9 ]
+    }],
+    "challenge": {
+        "size": 34,
+        "speed": 78
+    }
+}, {
+    "number": 29,
+    "name": "Storage Floor",
+    "floor": [ "N", "K", "A", "E", "R", "D", "O", "L", "Y", "J", "null", "null", 8 ],
+    "expect": [{
+        "inbox": [ 7, 3, 3, 8, 8 ],
+        "outbox": [ "L", "E", "E", "Y", "Y" ]
+    }],
+    "challenge": {
+        "size": 5,
+        "speed": 25
+    }
+}, {
+    "number": 30,
+    "name": "String Storage Floor",
+    "floor": [ "G", "E", "T", 0, "T", "H", 0, "T", "A", "R", 0, "A", "W", "A", "K", "E", 0, "I", "S", 0, "X", "X", "X", 0 ],
+    "expect": [{
+        "inbox": [ 4, 15, 7, 0, 22, 17, 11, 20, 2, 13, 4, 17, 22 ],
+        "outbox": [ "T", "H", "E", "T", "A", "R", "G", "E", "T", "X", "I", "S", "A", "W", "A", "K", "E", "X", "X", "X", "T", "A", "K", "E", "T", "H", "I", "S", "X" ]
+    }],
+    "challenge": {
+        "size": 7,
+        "speed": 203
+    }
+}, {
+    "number": 31,
+    "name": "String Reverse",
+    "floor": { "14": 0 },
+    "expect": [{
+        "inbox": [ "T", "E", "A", 0, "M", "O", "R", "E", 0, "B", "U", "G", 0 ],
+        "outbox": [ "A", "E", "T", "E", "R", "O", "M", "G", "U", "B" ]
+    }],
+    "challenge": {
+        "size": 11,
+        "speed": 122
+    }
+}, {
+    "number": 32,
+    "name": "Inventory Report",
+    "floor": [ "B", "A", "X", "B", "C", "X", "A", "B", "A", "X", "C", "B", "A", "B", 0 ],
+    "expect": [{
+        "inbox": [ "X", "A", "C", "B" ],
+        "outbox": [ 3, 4, 2, 5 ]
+    }],
+    "challenge": {
+        "size": 16,
+        "speed": 393
+    }
+}, {
+    "number": 34,
+    "name": "Vowel Incinerator",
+    "floor": [ "A", "E", "I", "O", "U", 0 ],
+    "expect": [{
+        "inbox": [ "C", "O", "D", "E", "U", "P", "L", "A", "K", "E" ],
+        "outbox": [ "C", "D", "P", "L", "K" ]
+    }],
+    "challenge": {
+        "size": 13,
+        "speed": 323
+    }
+}, {
+    "number": 35,
+    "name": "Duplicate Removal",
+    "floor": { "14": 0 },
+    "expect": [{
+        "inbox": [ "A", "C", "E", "E", "B", "C", "C", "A", "D", "E" ],
+        "outbox": [ "A", "C", "E", "B", "D" ]
+    }],
+    "challenge": {
+        "size": 17,
+        "speed": 167
+    }
+}, {
+    "number": 36,
+    "name": "Alphabetizer",
+    "floor": { "23": 0, "24": 10 },
+    "expect": [{
+        "inbox": [ "U", "N", "I", "X", 0, "U", "N", "T", "I", "E", 0 ],
+        "outbox": [ "U", "N", "I", "X" ]
+    }],
+    "challenge": {
+        "size": 39,
+        "speed": 109
+    }
+}, {
+    "number": 37,
+    "name": "Scavenger Chain",
+    "floor": { "0": "E", "1": 13, "3": "C", "4": 23, "10": "P", "11": 20, "13": "S", "14": 3, "20": "E", "21": -1, "23": "A", "24": 10 },
+    "expect": [{
+        "inbox": [ 23, 0 ],
+        "outbox": [ "A", "P", "E", "E", "S", "C", "A", "P", "E" ]
+    }],
+    "challenge": {
+        "size": 8,
+        "speed": 63
+    }
+}, {
+    "number": 38,
+    "name": "Digit Exploder",
+    "floor": { "9": 0, "10": 10, "11": 100 },
+    "expect": [{
+        "inbox": [ 705, 8, 60, 744 ],
+        "outbox": [ 7, 0, 5, 8, 6, 0, 7, 4, 4 ]
+    }],
+    "challenge": {
+        "size": 30,
+        "speed": 165
+    }
+}, {
+    "number": 39,
+    "name": "Re-Coordinator",
+    "floor": { "14": 0, "15": 4 },
+    "expect": [{
+        "inbox": [ 1, 5, 5, 5 ],
+        "outbox": [ 0, 1, 1, 1, 1, 1, 1, 1 ]
+    }],
+    "challenge": {
+        "size": 14,
+        "speed": 76
+    }
+}, {
+    "number": 40,
+    "name": "Prime Factory",
+    "floor": { "24": 0 },
+    "expect": [{
+        "inbox": [ 13, 18, 11 ],
+        "outbox": [ 13, 2, 3, 3, 11 ]
+    }],
+    "challenge": {
+        "size": 28,
+        "speed": 399
+    }
+}, {
+    "number": 41,
+    "name": "Sorting Floor",
+    "floor": { "24": 0 },
+    "expect": [{
+        "inbox": [ 91, 21, 46, 0, "T", "H", "I", "N", "K", 0, 86, 85, 83, 37, 32, 51, 19, 62, 72, 59, 0, 66, 0 ],
+        "outbox": [ 21, 46, 91, "H", "I", "K", "N", "T", 19, 32, 37, 51, 59, 62, 72, 83, 85, 86, 66 ]
+    }],
+    "challenge": {
+        "size": 34,
+        "speed": 714
+    }
 }]
