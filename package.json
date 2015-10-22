@@ -1,0 +1,15 @@
+{
+  "name": "hrm-level-data",
+  "version": "0.0.0",
+  "description": "Human Resource Machine level data",
+  "main": "index.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atesgoral/hrm-level-data.git"
+  },
+  "keywords": [
+    "hrm"
+  ],
+  "author": "Ates Goral <ates@magnetiq.com> (http://magnetiq.com/)",
+  "license": "MIT"
+}
