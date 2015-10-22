@@ -72,7 +72,7 @@ _Number_. The level number, as it appears in the game. Note that the level numbe
 _String_. The level name.
 
 ### floor
-_Object_/_Array_. The floor setup. Tiles values can either be numbers (e.g. 5) or strings for letters (e.g. "E"). Numbers are never represented as strings (e.g. "3" won't appear).
+_Object_/_Array_. The floor setup. Tiles values can either be numbers (e.g. 5), strings for letters (e.g. "E") or null. Numbers are never represented as strings (e.g. "3" won't appear).
 
 For sparse setups, this can be an object with keys as floor tile indices:
 
@@ -84,6 +84,12 @@ For setups where every tile is occupied, this can be an array where indices are 
 
 ```
 floor: [ "A", "E", "I", "O", "U", 0 ] // "A" is on tile 0, "E" is on tile 1, etc.
+```
+
+For setups where almost every tile is occupied, the unoccupied tiles can be represented with nulls:
+
+```
+floor: [ "N", "K", "A", "E", "R", "D", "O", "L", "Y", "J", null, null, 8 ]
 ```
 
 ### expect
