@@ -373,6 +373,11 @@
 }, {
     "number": 38,
     "name": "Digit Exploder",
+    "floor": { "9": 0, "10": 10, "11": 100 },
+    "expect": [{
+        "inbox": [ 705, 8, 60, 744 ],
+        "outbox": [ 7, 0, 5, 8, 6, 0, 7, 4, 4 ]
+    }],
     "challenge": {
         "size": 30,
         "speed": 165
@@ -380,6 +385,11 @@
 }, {
     "number": 39,
     "name": "Re-Coordinator",
+    "floor": { "14": 0, "15": 4 },
+    "expect": [{
+        "inbox": [ 1, 5, 5, 5 ],
+        "outbox": [ 0, 1, 1, 1, 1, 1, 1, 1 ]
+    }],
     "challenge": {
         "size": 14,
         "speed": 76
@@ -387,6 +397,11 @@
 }, {
     "number": 40,
     "name": "Prime Factory",
+    "floor": { "24": 0 },
+    "expect": [{
+        "inbox": [ 13, 18, 11 ],
+        "outbox": [ 13, 2, 3, 3, 11 ]
+    }],
     "challenge": {
         "size": 28,
         "speed": 399
@@ -394,6 +409,11 @@
 }, {
     "number": 41,
     "name": "Sorting Floor",
+    "floor": { "24": 0 },
+    "expect": [{
+        "inbox": [ 91, 21, 46, 0, "T", "H", "I", "N", "K", 0, 86, 85, 83, 37, 32, 51, 19, 62, 72, 59, 0, 66, 0 ],
+        "outbox": [ 21, 46, 91, "H", "I", "K", "N", "T", 19, 32, 37, 51, 59, 62, 72, 83, 85, 86, 66 ]
+    }],
     "challenge": {
         "size": 34,
         "speed": 714
