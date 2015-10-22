@@ -1,24 +1,24 @@
 var levels = require('./index.json'),
-	out = [];
+    out = [];
 
 function quote(v) {
-	return '"' + v + '"'; // @todo Could add quote escaping, but there's no need at this point
+    return '"' + v + '"'; // @todo Could add quote escaping, but there's no need at this point
 }
 
 function list(array) {
-	return array && array.length
-		? '[ ' + array.map(quote).join(', ') + ' ]'
-		: '[]';
+    return array && array.length
+        ? '[ ' + array.map(quote).join(', ') + ' ]'
+        : '[]';
 }
 
 function map(obj) {
-	return obj && Object.keys(obj).length
-		? '{ ' + Object.keys(obj).map(function (key) { return quote(key) + ': ' + quote(obj[key]); }).join(', ') + ' }'
-		: '{}';
+    return obj && Object.keys(obj).length
+        ? '{ ' + Object.keys(obj).map(function (key) { return quote(key) + ': ' + quote(obj[key]); }).join(', ') + ' }'
+        : '{}';
 }
 
 function number(v) {
-	return isNaN(v) ? -1 : v;
+    return isNaN(v) ? -1 : v;
 }
 
 out.push('[{');
