@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/atesgoral/hrm-level-data.svg?branch=master)](https://travis-ci.org/atesgoral/hrm-level-data)
+
 # hrm-level-data
 Human Resource Machine level data
 
