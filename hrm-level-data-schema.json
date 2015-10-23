@@ -1,0 +1,64 @@
+{
+  "title": "Human Resource Machine Level Data Schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "number": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string"
+      },
+      "floor": {
+        "type": "object",
+        "properties": {
+          "columns": {
+            "type": "number"
+          },
+          "rows": {
+            "type": "number"
+          },
+          "tiles": {
+            "anyOf": [
+              {
+                "type": "object"
+              },
+              {
+                "type": "array"
+              }
+            ]
+          }
+        }
+      },
+      "expect": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "inbox": {
+              "type": "array"
+            },
+            "outbox": {
+              "type": "array"
+            }
+          },
+          "required": [ "inbox", "outbox" ]
+        }
+      },
+      "challenge": {
+        "type": "object",
+        "properties": {
+          "size": {
+            "type": "number"
+          },
+          "speed": {
+            "type": "number"
+          }
+        },
+        "required": [ "size", "speed" ]
+      }
+    },
+    "required": [ "number", "name", "floor", "expect", "challenge" ]
+  }
+}

@@ -17,5 +17,11 @@
       "email": "nrkn.com@gmail.com"
     }
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tv4-cmd": "^1.0.0"
+  },
+  "scripts": {
+    "test": "tv4 -s hrm-level-data-schema.json -j index.json -v"
+  }
 }
