@@ -33,7 +33,11 @@ An excerpt:
 }, {
     number: 20,
     name: "Multiplication Workshop",
-    floor: { "9": 0 },
+    floor: {
+        columns: 5,
+        rows: 2,
+        tiles: { "9": 0 }
+    },
     expect: [{
         inbox: [ 9, 4, 1, 7, 7, 0, 0, 8, 4, 2 ],
         outbox: [ 36, 7, 0, 0, 8 ]
@@ -47,7 +51,11 @@ An excerpt:
 }, {
     number: 34,
     name: "Vowel Incinerator",
-    floor: [ "A", "E", "I", "O", "U", 0 ],
+    floor: {
+        columns: 5,
+        rows: 2,
+        tiles: [ "A", "E", "I", "O", "U", 0 ]
+    },
     expect: [{
         inbox: [ "C", "O", "D", "E", "U", "P", "L", "A", "K", "E" ],
         outbox: [ "C", "D", "P", "L", "K" ]
@@ -72,24 +80,33 @@ _Number_. The level number, as it appears in the game. Note that the level numbe
 _String_. The level name.
 
 ### floor
-_Object_/_Array_. The floor setup. Tiles values can either be numbers (e.g. 5), strings for letters (e.g. "E") or null. Numbers are never represented as strings (e.g. "3" won't appear).
+_Object_. The floor setup. Can be an empty object if the level doesn't make use of the floor. Has the following properties:
+
+#### columns
+_Number_. The number of columns of the floor grid.
+
+#### rows
+_Number_. The number of rows of the floor grid.
+
+#### tiles
+_Object_/_Array_. The floor grid contents. Tile values can either be numbers (e.g. 5), strings for letters (e.g. "E") or null. Numbers are never represented as strings (e.g. "3" won't appear).
 
 For sparse setups, this can be an object with keys as floor tile indices:
 
 ```
-floor: { "0": "A", "10": 4 } // "A" is on tile 0, 4 is on tile 10
+tiles: { "0": "A", "10": 4 } // "A" is on tile 0, 4 is on tile 10
 ```
 
 For setups where every tile is occupied, this can be an array where indices are directly mapped to floor tiles:
 
 ```
-floor: [ "A", "E", "I", "O", "U", 0 ] // "A" is on tile 0, "E" is on tile 1, etc.
+tiles: [ "A", "E", "I", "O", "U", 0 ] // "A" is on tile 0, "E" is on tile 1, etc.
 ```
 
 For setups where almost every tile is occupied, the unoccupied tiles can be represented with nulls:
 
 ```
-floor: [ "N", "K", "A", "E", "R", "D", "O", "L", "Y", "J", null, null, 8 ]
+tiles: [ "N", "K", "A", "E", "R", "D", "O", "L", "Y", "J", null, null, 8 ]
 ```
 
 ### expect

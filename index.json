@@ -7,6 +7,10 @@
       {
         "inbox": [ 1, 9, 4 ],
         "outbox": [ 1, 9, 4 ]
+      },
+      {
+        "inbox": [ 4, 3, 3 ],
+        "outbox": [ 4, 3, 3 ]
       }
     ],
     "challenge": {
@@ -32,7 +36,11 @@
   {
     "number": 3,
     "name": "Copy Floor",
-    "floor": [ "U", "J", "X", "G", "B", "E" ],
+    "floor": {
+      "columns": 3,
+      "rows": 2,
+      "tiles": [ "U", "J", "X", "G", "B", "E" ]
+    },
     "expect": [
       {
         "inbox": [ -99, -99, -99, -99 ],
@@ -213,8 +221,10 @@
     "number": 17,
     "name": "Exclusive Lounge",
     "floor": {
-      "4": 0,
-      "5": 1
+      "tiles": {
+        "4": 0,
+        "5": 1
+      }
     },
     "expect": [
       {
@@ -246,7 +256,9 @@
     "number": 20,
     "name": "Multiplication Workshop",
     "floor": {
-      "9": 0
+      "tiles": {
+        "9": 0
+      }
     },
     "expect": [
       {
@@ -263,7 +275,9 @@
     "number": 21,
     "name": "Zero Terminated Sum",
     "floor": {
-      "5": 0
+      "tiles": {
+        "5": 0
+      }
     },
     "expect": [
       {
@@ -280,7 +294,9 @@
     "number": 22,
     "name": "Fibonacci Visitor",
     "floor": {
-      "9": 0
+      "tiles": {
+        "9": 0
+      }
     },
     "expect": [
       {
@@ -327,7 +343,9 @@
     "number": 25,
     "name": "Cumulative Countdown",
     "floor": {
-      "5": 0
+      "tiles": {
+        "5": 0
+      }
     },
     "expect": [
       {
@@ -344,7 +362,9 @@
     "number": 26,
     "name": "Small Divide",
     "floor": {
-      "9": 0
+      "tiles": {
+        "9": 0
+      }
     },
     "expect": [
       {
@@ -375,7 +395,9 @@
   {
     "number": 29,
     "name": "Storage Floor",
-    "floor": [ "N", "K", "A", "E", "R", "D", "O", "L", "Y", "J", null, null, 8 ],
+    "floor": {
+      "tiles": [ "N", "K", "A", "E", "R", "D", "O", "L", "Y", "J", null, null, 8 ]
+    },
     "expect": [
       {
         "inbox": [ 7, 3, 3, 8, 8 ],
@@ -390,7 +412,9 @@
   {
     "number": 30,
     "name": "String Storage Floor",
-    "floor": [ "G", "E", "T", 0, "T", "H", 0, "T", "A", "R", 0, "A", "W", "A", "K", "E", 0, "I", "S", 0, "X", "X", "X", 0 ],
+    "floor": {
+      "tiles": [ "G", "E", "T", 0, "T", "H", 0, "T", "A", "R", 0, "A", "W", "A", "K", "E", 0, "I", "S", 0, "X", "X", "X", 0 ]
+    },
     "expect": [
       {
         "inbox": [ 4, 15, 7, 0, 22, 17, 11, 20, 2, 13, 4, 17, 22 ],
@@ -406,7 +430,9 @@
     "number": 31,
     "name": "String Reverse",
     "floor": {
-      "14": 0
+      "tiles": {
+        "14": 0
+      }
     },
     "expect": [
       {
@@ -422,7 +448,9 @@
   {
     "number": 32,
     "name": "Inventory Report",
-    "floor": [ "B", "A", "X", "B", "C", "X", "A", "B", "A", "X", "C", "B", "A", "B", 0 ],
+    "floor": {
+      "tiles": [ "B", "A", "X", "B", "C", "X", "A", "B", "A", "X", "C", "B", "A", "B", 0 ]
+    },
     "expect": [
       {
         "inbox": [ "X", "A", "C", "B" ],
@@ -437,7 +465,9 @@
   {
     "number": 34,
     "name": "Vowel Incinerator",
-    "floor": [ "A", "E", "I", "O", "U", 0 ],
+    "floor": {
+      "tiles": [ "A", "E", "I", "O", "U", 0 ]
+    },
     "expect": [
       {
         "inbox": [ "C", "O", "D", "E", "U", "P", "L", "A", "K", "E" ],
@@ -453,7 +483,9 @@
     "number": 35,
     "name": "Duplicate Removal",
     "floor": {
-      "14": 0
+      "tiles": {
+        "14": 0
+      }
     },
     "expect": [
       {
@@ -470,8 +502,10 @@
     "number": 36,
     "name": "Alphabetizer",
     "floor": {
-      "23": 0,
-      "24": 10
+      "tiles": {
+        "23": 0,
+        "24": 10
+      }
     },
     "expect": [
       {
@@ -488,18 +522,20 @@
     "number": 37,
     "name": "Scavenger Chain",
     "floor": {
-      "0": "E",
-      "1": 13,
-      "3": "C",
-      "4": 23,
-      "10": "P",
-      "11": 20,
-      "13": "S",
-      "14": 3,
-      "20": "E",
-      "21": -1,
-      "23": "A",
-      "24": 10
+      "tiles": {
+        "0": "E",
+        "1": 13,
+        "3": "C",
+        "4": 23,
+        "10": "P",
+        "11": 20,
+        "13": "S",
+        "14": 3,
+        "20": "E",
+        "21": -1,
+        "23": "A",
+        "24": 10
+      }
     },
     "expect": [
       {
@@ -516,9 +552,11 @@
     "number": 38,
     "name": "Digit Exploder",
     "floor": {
-      "9": 0,
-      "10": 10,
-      "11": 100
+      "tiles": {
+        "9": 0,
+        "10": 10,
+        "11": 100
+      }
     },
     "expect": [
       {
@@ -535,8 +573,10 @@
     "number": 39,
     "name": "Re-Coordinator",
     "floor": {
-      "14": 0,
-      "15": 4
+      "tiles": {
+        "14": 0,
+        "15": 4
+      }
     },
     "expect": [
       {
@@ -553,7 +593,9 @@
     "number": 40,
     "name": "Prime Factory",
     "floor": {
-      "24": 0
+      "tiles": {
+        "24": 0
+      }
     },
     "expect": [
       {
@@ -570,7 +612,9 @@
     "number": 41,
     "name": "Sorting Floor",
     "floor": {
-      "24": 0
+      "tiles": {
+        "24": 0
+      }
     },
     "expect": [
       {
