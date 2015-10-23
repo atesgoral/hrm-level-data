@@ -121,7 +121,7 @@ _Array_. The program input as it appears in the "IN" conveyor belt. The first it
 _Array_. The expected program output as it will appear in the "OUT" conveyor belt. The first item needs to match what will be first placed on the conveyor belt. In other words, this is also FIFO.
 
 ### challenge
-_Object. The criteria used for the game's size/speed challenges. Each is an object with the following properties:
+_Object_. The criteria used for the game's size/speed challenges. Each is an object with the following properties:
 
 #### size
 _Number_. The maximum program size to meet the size challenge.
