@@ -22,10 +22,42 @@
           "tiles": {
             "anyOf": [
               {
-                "type": "object"
+                "type": "object",
+                "patternProperties": {
+                  "^\\d$": {
+                    "anyOf": [
+                      {
+                        "type": "number",
+                        "pattern": "^-?\\d+$"
+                      },
+                      {
+                        "type": "string",
+                        "pattern": "^[A-Z]$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
               },
               {
-                "type": "array"
+                "type": "array",
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "pattern": "^-?\\d+$"
+                    },
+                    {
+                      "type": "string",
+                      "pattern": "^[A-Z]$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
               }
             ]
           }
