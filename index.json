@@ -2,6 +2,8 @@
   {
     "number": 1,
     "name": "Mail Room",
+    "instructions": "Drag commands into this area to build a program.\n\nYour program should tell your worker to grab each thing from the INBOX, and drop it into the OUTBOX.",
+    "commands": [ "INBOX", "OUTBOX" ],
     "floor": {},
     "expect": [
       {
@@ -21,6 +23,8 @@
   {
     "number": 2,
     "name": "Busy Mail Room",
+    "instructions": "Grab each thing from the INBOX, and drop each one into the OUTBOX.\n\nYou got a new command! You can drag JUMP's arrow to jump to different lines within your program.",
+    "commands": [ "INBOX", "OUTBOX", "JUMP" ],
     "floor": {},
     "expect": [
       {
@@ -36,6 +40,8 @@
   {
     "number": 3,
     "name": "Copy Floor",
+    "instructions": "Ignore the INBOX for now, and just send the following 3 letters to the OUTBOX:\n\nB U G\n\nThe Facilities Management staff has placed some items over there on the carpet for you. If only there were a way you could pick them up...",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "JUMP" ],
     "floor": {
       "columns": 3,
       "rows": 2,
