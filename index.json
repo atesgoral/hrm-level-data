@@ -63,7 +63,11 @@
     "name": "Scrambler Handler",
     "instructions": "Grab the first TWO things from the INBOX and drop them into the OUTBOX in the reverse order. Repeat until the INBOX is empty.\n\nYou got a new command! Feel free to COPYTO wherever you like on the carpet. It will be cleaned later.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "JUMP" ],
-    "floor": {},
+    "floor": {
+      "columns": 3,
+      "rows": 1,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 4, 8, "A", "E", 2, 5 ],
@@ -80,7 +84,11 @@
     "name": "Rainy Summer",
     "instructions": "For each two things in the INBOX, add them together, and put the result in the OUTBOX.\n\nYou got a new command! It ADDs the contents of a tile on the floor to whatever value you're currently holding.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP" ],
-    "floor": {},
+    "floor": {
+      "columns": 3,
+      "rows": 1,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 3, 3, 1, 4, -3, 5, 0, -1 ],
@@ -97,7 +105,11 @@
     "name": "Zero Exterminator",
     "instructions": "Send all things that ARE NOT ZERO to the OUTBOX.\n\nYou got a new command! It jumps ONLY if the value you are holding is ZERO. Otherwise it continues to the next line.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP", "JUMPZ" ],
-    "floor": {},
+    "floor": {
+      "columns": 3,
+      "rows": 3,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 8, 0, -4, "A", 0, 0, 9, 0 ],
@@ -114,7 +126,11 @@
     "name": "Tripler Room",
     "instructions": "For each thing in the INBOX, TRIPLE it. And OUTBOX the result.\n\nSelf improvement tip: Where are we going with this? Please leave the high level decisions to management.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP" ],
-    "floor": {},
+    "floor": {
+      "columns": 3,
+      "rows": 1,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 7, -5, 5, 0 ],
@@ -131,7 +147,11 @@
     "name": "Zero Preservation Initiative",
     "instructions": "Send only the ZEROs to the OUTBOX.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP", "JUMPZ" ],
-    "floor": {},
+    "floor": {
+      "columns": 3,
+      "rows": 3,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 2, 0, 1, "B", 0, 0, 6, 0 ],
@@ -148,7 +168,11 @@
     "name": "Octoplier Suite",
     "instructions": "For each thing in the INBOX, multiply it by 8, and put the result in the OUTBOX.\n\nUsing a bunch of ADD commands is easy, but WASTEFUL! Can you do it using only 3 ADD commands? Management is watching.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP" ],
-    "floor": {},
+    "floor": {
+      "columns": 5,
+      "rows": 1,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 2, -1, 3, 0 ],
