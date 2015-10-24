@@ -189,7 +189,11 @@
     "name": "Sub Hallway",
     "instructions": "For each two things in the INBOX, first subtract the 1st from the 2nd and put the result in the OUTBOX. AND THEN, subtract the 2nd from the 1st and put the result in the OUTBOX. Repeat.\n\nYou got a new command! SUBtracts the contents of a tile on the floor FROM whatever value you're currently holding.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ" ],
-    "floor": {},
+    "floor": {
+      "columns": 3,
+      "rows": 1,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 4, 5, 8, 4, -9, -9, 5, -3 ],
@@ -206,7 +210,11 @@
     "name": "Tetracontiplier",
     "instructions": "For each thing in the INBOX, multiply it by 40, and put the result in the OUTBOX.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP" ],
-    "floor": {},
+    "floor": {
+      "columns": 5,
+      "rows": 1,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 2, -6, 5, 0 ],
@@ -224,7 +232,11 @@
     "instructions": "Get two things from the INBOX. If they are EQUAL, put ONE of them in the OUTBOX. Discard non-equal pairs. Repeat!\n\nYou got... COMMENTS! You can use them, if you like, to mark sections of your program.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ" ],
     "comments": true,
-    "floor": {},
+    "floor": {
+      "columns": 1,
+      "rows": 3,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 6, 1, 8, 8, 5, 0, -4, -4 ],
@@ -242,7 +254,11 @@
     "instructions": "Grab TWO things form the INBOX, and put only the BIGGER of the two in the OUTBOX. If they are equal, just pick either one. Repeat!\n\nYou got a new command! Jumps only if the thing you're holding is negative. (Less than zero.) Otherwise continues to the next line.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ", "JUMPN" ],
     "comments": true,
-    "floor": {},
+    "floor": {
+      "columns": 3,
+      "rows": 1,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 4, 9, -8, -4, 9, 9, -6, -3 ],
@@ -260,7 +276,11 @@
     "instructions": "Send each thing from the INBOX to the OUTBOX, BUT, if a number is negative, first remove its negative sign.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ", "JUMPN" ],
     "comments": true,
-    "floor": {},
+    "floor": {
+      "columns": 1,
+      "rows": 3,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 2, -6, -5, 0, -3, -7, 9 ],
@@ -279,6 +299,8 @@
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ", "JUMPN" ],
     "comments": true,
     "floor": {
+      "columns": 2,
+      "rows": 3,
       "tiles": {
         "4": 0,
         "5": 1
@@ -301,7 +323,11 @@
     "instructions": "For each number in the INBOX, send that number to the OUTBOX, followed by all numbers down to (or up to) zero. It's a countdown!\n\nYou got new commands! They add ONE or subtract ONE from an item on the floor. The result is given back to you, and for your convenience, also written right back to the floor. BUMP!",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "comments": true,
-    "floor": {},
+    "floor": {
+      "columns": 5,
+      "rows": 2,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 8, -5, 0, 3 ],
@@ -321,6 +347,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 5,
+      "rows": 2,
       "tiles": {
         "9": 0
       }
