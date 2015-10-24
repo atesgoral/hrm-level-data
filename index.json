@@ -2,6 +2,8 @@
   {
     "number": 1,
     "name": "Mail Room",
+    "instructions": "Drag commands into this area to build a program.\n\nYour program should tell your worker to grab each thing from the INBOX, and drop it into the OUTBOX.",
+    "commands": [ "INBOX", "OUTBOX" ],
     "floor": {},
     "expect": [
       {
@@ -21,6 +23,8 @@
   {
     "number": 2,
     "name": "Busy Mail Room",
+    "instructions": "Grab each thing from the INBOX, and drop each one into the OUTBOX.\n\nYou got a new command! You can drag JUMP's arrow to jump to different lines within your program.",
+    "commands": [ "INBOX", "OUTBOX", "JUMP" ],
     "floor": {},
     "expect": [
       {
@@ -36,6 +40,8 @@
   {
     "number": 3,
     "name": "Copy Floor",
+    "instructions": "Ignore the INBOX for now, and just send the following 3 letters to the OUTBOX:\n\nB U G\n\nThe Facilities Management staff has placed some items over there on the carpet for you. If only there were a way you could pick them up...",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "JUMP" ],
     "floor": {
       "columns": 3,
       "rows": 2,
@@ -55,6 +61,8 @@
   {
     "number": 4,
     "name": "Scrambler Handler",
+    "instructions": "Grab the first TWO things from the INBOX and drop them into the OUTBOX in the reverse order. Repeat until the INBOX is empty.\n\nYou got a new command! Feel free to COPYTO wherever you like on the carpet. It will be cleaned later.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "JUMP" ],
     "floor": {},
     "expect": [
       {
@@ -70,6 +78,8 @@
   {
     "number": 6,
     "name": "Rainy Summer",
+    "instructions": "For each two things in the INBOX, add them together, and put the result in the OUTBOX.\n\nYou got a new command! It ADDs the contents of a tile on the floor to whatever value you're currently holding.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP" ],
     "floor": {},
     "expect": [
       {
@@ -85,6 +95,8 @@
   {
     "number": 7,
     "name": "Zero Exterminator",
+    "instructions": "Send all things that ARE NOT ZERO to the OUTBOX.\n\nYou got a new command! It jumps ONLY if the value you are holding is ZERO. Otherwise it continues to the next line.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP", "JUMPZ" ],
     "floor": {},
     "expect": [
       {
@@ -100,6 +112,8 @@
   {
     "number": 8,
     "name": "Tripler Room",
+    "instructions": "For each thing in the INBOX, TRIPLE it. And OUTBOX the result.\n\nSelf improvement tip: Where are we going with this? Please leave the high level decisions to management.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP" ],
     "floor": {},
     "expect": [
       {
@@ -115,6 +129,8 @@
   {
     "number": 9,
     "name": "Zero Preservation Initiative",
+    "instructions": "Send only the ZEROs to the OUTBOX.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP", "JUMPZ" ],
     "floor": {},
     "expect": [
       {
@@ -130,6 +146,8 @@
   {
     "number": 10,
     "name": "Octoplier Suite",
+    "instructions": "For each thing in the INBOX, multiply it by 8, and put the result in the OUTBOX.\n\nUsing a bunch of ADD commands is easy, but WASTEFUL! Can you do it using only 3 ADD commands? Management is watching.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP" ],
     "floor": {},
     "expect": [
       {
@@ -145,6 +163,8 @@
   {
     "number": 11,
     "name": "Sub Hallway",
+    "instructions": "For each two things in the INBOX, first subtract the 1st from the 2nd and put the result in the OUTBOX. AND THEN, subtract the 2nd from the 1st and put the result in the OUTBOX. Repeat.\n\nYou got a new command! SUBtracts the contents of a tile on the floor FROM whatever value you're currently holding.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ" ],
     "floor": {},
     "expect": [
       {
@@ -160,6 +180,8 @@
   {
     "number": 12,
     "name": "Tetracontiplier",
+    "instructions": "For each thing in the INBOX, multiply it by 40, and put the result in the OUTBOX.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP" ],
     "floor": {},
     "expect": [
       {
@@ -175,6 +197,9 @@
   {
     "number": 13,
     "name": "Equalization Room",
+    "instructions": "Get two things from the INBOX. If they are EQUAL, put ONE of them in the OUTBOX. Discard non-equal pairs. Repeat!\n\nYou got... COMMENTS! You can use them, if you like, to mark sections of your program.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ" ],
+    "comments": true,
     "floor": {},
     "expect": [
       {
@@ -190,6 +215,9 @@
   {
     "number": 14,
     "name": "Maximization Room",
+    "instructions": "Grab TWO things form the INBOX, and put only the BIGGER of the two in the OUTBOX. If they are equal, just pick either one. Repeat!\n\nYou got a new command! Jumps only if the thing you're holding is negative. (Less than zero.) Otherwise continues to the next line.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
     "floor": {},
     "expect": [
       {
@@ -205,6 +233,9 @@
   {
     "number": 16,
     "name": "Absolute Positivity",
+    "instructions": "Send each thing from the INBOX to the OUTBOX, BUT, if a number is negative, first remove its negative sign.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
     "floor": {},
     "expect": [
       {
@@ -220,6 +251,9 @@
   {
     "number": 17,
     "name": "Exclusive Lounge",
+    "instructions": "For each TWO things in the INBOX:\n\nSend a 0 to the OUTBOX if they have the same sign. (Both positive or both negative.)\n\nSend a 1 to the OUTBOX if their signs are different. Repeat until the INBOX is empty.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
     "floor": {
       "tiles": {
         "4": 0,
@@ -240,6 +274,9 @@
   {
     "number": 19,
     "name": "Countdown",
+    "instructions": "For each number in the INBOX, send that number to the OUTBOX, followed by all numbers down to (or up to) zero. It's a countdown!\n\nYou got new commands! They add ONE or subtract ONE from an item on the floor. The result is given back to you, and for your convenience, also written right back to the floor. BUMP!",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
     "floor": {},
     "expect": [
       {
@@ -255,6 +292,10 @@
   {
     "number": 20,
     "name": "Multiplication Workshop",
+    "instructions": "For each two things in the INBOX, multiply them, and OUTBOX the result. Don't worry about negative numbers for now.\n\nYou got... LABELS! They can help you remember the purpose of each tile on the floor. Just tap any tile on the floor to edit.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "9": 0
@@ -274,6 +315,10 @@
   {
     "number": 21,
     "name": "Zero Terminated Sum",
+    "instructions": "The INBOX is filled with zero terminated strings! What's that? Ask me. Your Boss.\n\nAdd together all the numbers in each string. When you reach the end of a string (marked by a ZERO), put your sum in the OUTBOX. Reset and report for each string.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "5": 0
@@ -293,6 +338,10 @@
   {
     "number": 22,
     "name": "Fibonacci Visitor",
+    "instructions": "For each thing in the INBOX, send to the OUTBOX the full Fibonacci Sequence up to, but not exceeding that value. For example, if INBOX is 10, OUTBOX should be 1 1 2 3 5 8. What's a Fibonacci Sequence? Ask your boss, or a friendly search box.\n\n1 1 2 3 5 8 13 21 34 55 89 ...",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "9": 0
@@ -312,6 +361,10 @@
   {
     "number": 23,
     "name": "The Littlest Number",
+    "instructions": "For each zero terminated string in the INBOX, send to the OUTBOX only the SMALLEST number you've seen in that string. You will never be given an empty string. Reset and repeat for each string.\n\nWhat's a \"zero terminated string\"? Go ask your boss on the previous floor!",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
+    "labels": true,
     "floor": {},
     "expect": [
       {
@@ -327,6 +380,10 @@
   {
     "number": 24,
     "name": "Mod Module",
+    "instructions": "For each two things in the INBOX, OUTBOX the remainder that would result if you had divided the first by the second. Don't worry, you don't actually have to divide. And don't worry about negative numbers for now.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
+    "labels": true,
     "floor": {},
     "expect": [
       {
@@ -342,6 +399,10 @@
   {
     "number": 25,
     "name": "Cumulative Countdown",
+    "instructions": "For each thing in the INBOX, OUTBOX the sum of itself plus all numbers down to zero. For example, if INBOX is 3, OUTBOX should be 6, because 3+2+1 = 6.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "5": 0
@@ -361,6 +422,10 @@
   {
     "number": 26,
     "name": "Small Divide",
+    "instructions": "For each two things in the INBOX, how many times does the second fully fit into the first? Don't worry about negative numbers, divide by zero, or remainders.\n\nSelf improvement tip: This might be a good time to practice copying and pasting from a previous assignment!",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "9": 0
@@ -380,6 +445,10 @@
   {
     "number": 28,
     "name": "Three Sort",
+    "instructions": "For each THRREE THINGS in the INBOX, send them to the OUTBOX in order from smallest to largest.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
+    "labels": true,
     "floor": {},
     "expect": [
       {
@@ -395,6 +464,11 @@
   {
     "number": 29,
     "name": "Storage Floor",
+    "instructions": "Imagine each thing in the INBOX is an address. And each address refers to a tile 0-9 on the floor. Your task: For each address in the INBOX, pick up the letter at that address and OUTBOX it.\n\nCongratulations! You can now access tiles on the floor INDIRECTLY! Observe this example to see how it works, compared to what you've been doing so far:",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "dereferencing": true,
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": [ "N", "K", "A", "E", "R", "D", "O", "L", "Y", "J", null, null, 8 ]
     },
@@ -412,6 +486,11 @@
   {
     "number": 30,
     "name": "String Storage Floor",
+    "instructions": "Each thing in the INBOX is an address of a tile on the floor. For each address provided in the INBOX, OUTBOX the requested item from the floow and ALL FOLLOWING items on the floor until you reach a ZERO. Repeat!",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "dereferencing": true,
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": [ "G", "E", "T", 0, "T", "H", 0, "T", "A", "R", 0, "A", "W", "A", "K", "E", 0, "I", "S", 0, "X", "X", "X", 0 ]
     },
@@ -429,6 +508,11 @@
   {
     "number": 31,
     "name": "String Reverse",
+    "instructions": "For each zero terminated string in the INBOX, reverse it and put the result in the OUTBOX. Repeat!",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "dereferencing": true,
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "14": 0
@@ -448,6 +532,11 @@
   {
     "number": 32,
     "name": "Inventory Report",
+    "instructions": "For each thing in the INBOX, send to the OUTBOX the total number of matching items on the FLOOR.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "dereferencing": true,
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": [ "B", "A", "X", "B", "C", "X", "A", "B", "A", "X", "C", "B", "A", "B", 0 ]
     },
@@ -465,6 +554,11 @@
   {
     "number": 34,
     "name": "Vowel Incinerator",
+    "instructions": "Send everything from the INBOX to the OUTBOX, except the vowels.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "dereferencing": true,
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": [ "A", "E", "I", "O", "U", 0 ]
     },
@@ -482,6 +576,11 @@
   {
     "number": 35,
     "name": "Duplicate Removal",
+    "instructions": "Send everything from the INBOX to the OUTBOX, unless you've seen the same value before. Discard any duplicates.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "dereferencing": true,
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "14": 0
@@ -501,6 +600,11 @@
   {
     "number": 36,
     "name": "Alphabetizer",
+    "instructions": "The INBOX contains exactly two words. Determine which word comes first, if you were to order them alphabetically, and send only that word to the OUTBOX.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "dereferencing": true,
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "23": 0,
@@ -521,6 +625,11 @@
   {
     "number": 37,
     "name": "Scavenger Chain",
+    "instructions": "Each pair on the floor contains:\n1. data\n2. the address of another one of the pairs\n\nA scrambled chain! Each thing in the INBOX is an address of one of the pairs. OUTBOX the data for that pair, and also the data in all the following pairs in the chain. The chain ends when you reach a negative address. Repeat until the INBOX is empty.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "dereferencing": true,
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "0": "E",
@@ -551,6 +660,11 @@
   {
     "number": 38,
     "name": "Digit Exploder",
+    "instructions": "Grab each number from the INBOX, and send its digits to the OUTBOX. For example, 123 becomes 1, 2, 3.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "dereferencing": true,
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "9": 0,
@@ -572,6 +686,11 @@
   {
     "number": 39,
     "name": "Re-Coordinator",
+    "instructions": "Each number in the INBOX is an address of a tile on the floor. Send to the OUTBOX the coordinates of that tile, column first, row second.\n\nFor example, and address of 6 has coordinates 2, 1. You may ask your boss for more examples.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "dereferencing": true,
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "14": 0,
@@ -592,6 +711,11 @@
   {
     "number": 40,
     "name": "Prime Factory",
+    "instructions": "For each thing in the INBOX, send its PRIME FACTORS to the OUTBOX in order from smallest to largest.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "dereferencing": true,
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "24": 0
@@ -611,6 +735,11 @@
   {
     "number": 41,
     "name": "Sorting Floor",
+    "instructions": "For each zero terminated string in the INBOX, SORT the contents of the string, smallest first, biggest last, and put the results in the OUTBOX. Repeat for each string!",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "dereferencing": true,
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "24": 0

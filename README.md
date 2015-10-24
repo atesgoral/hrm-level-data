@@ -81,6 +81,21 @@ _Number_. The level number, as it appears in the game. Note that the level numbe
 ### name
 _String_. The level name.
 
+### instructions
+_String_. The instructions for the level.
+
+### commands
+_Array_. The allowed commands for the program. Valid commands are "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ" and "JUMPN".
+
+### dereferencing
+_Boolean_. _Optional_. `true` if the `[]` operator can be used in the commands "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP" and "BUMPDN". i.e. if floor tile values can be used to refer to indices for other floor tiles.
+
+### comments
+_Boolean_. _Optional_. `true` if comments are allowed to be used in the program.
+
+### labels
+_Boolean_. _Optional_. `true` if adding labels to floor tiles are allowed in the level.
+
 ### floor
 _Object_. The floor setup. Can be an empty object if the level doesn't make use of the floor. Has the following properties:
 
