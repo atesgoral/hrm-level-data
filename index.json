@@ -590,6 +590,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 5,
+      "rows": 3,
       "tiles": {
         "14": 0
       }
@@ -614,6 +616,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 5,
+      "rows": 4,
       "tiles": [ "B", "A", "X", "B", "C", "X", "A", "B", "A", "X", "C", "B", "A", "B", 0 ]
     },
     "expect": [
@@ -636,6 +640,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 5,
+      "rows": 2,
       "tiles": [ "A", "E", "I", "O", "U", 0 ]
     },
     "expect": [
@@ -658,6 +664,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 5,
+      "rows": 3,
       "tiles": {
         "14": 0
       }
@@ -682,6 +690,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 5,
+      "rows": 5,
       "tiles": {
         "23": 0,
         "24": 10
@@ -707,6 +717,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 5,
+      "rows": 5,
       "tiles": {
         "0": "E",
         "1": 13,
@@ -742,6 +754,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 3,
+      "rows": 4,
       "tiles": {
         "9": 0,
         "10": 10,
@@ -768,6 +782,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 4,
+      "rows": 4,
       "tiles": {
         "14": 0,
         "15": 4
@@ -793,6 +809,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 5,
+      "rows": 5,
       "tiles": {
         "24": 0
       }
@@ -817,6 +835,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 5,
+      "rows": 5,
       "tiles": {
         "24": 0
       }
