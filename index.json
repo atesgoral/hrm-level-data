@@ -508,6 +508,7 @@
   {
     "number": 31,
     "name": "String Reverse",
+    "instructions": "For each zero terminated string in the INBOX, reverse it and put the result in the OUTBOX. Repeat!",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "dereferencing": true,
     "comments": true,
@@ -531,6 +532,7 @@
   {
     "number": 32,
     "name": "Inventory Report",
+    "instructions": "For each thing in the INBOX, send to the OUTBOX the total number of matching items on the FLOOR.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "dereferencing": true,
     "comments": true,
@@ -552,6 +554,7 @@
   {
     "number": 34,
     "name": "Vowel Incinerator",
+    "instructions": "Send everything from the INBOX to the OUTBOX, except the vowels.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "dereferencing": true,
     "comments": true,
@@ -573,6 +576,7 @@
   {
     "number": 35,
     "name": "Duplicate Removal",
+    "instructions": "Send everything from the INBOX to the OUTBOX, unless you've seen the same value before. Discard any duplicates.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "dereferencing": true,
     "comments": true,
@@ -596,6 +600,7 @@
   {
     "number": 36,
     "name": "Alphabetizer",
+    "instructions": "The INBOX contains exactly two words. Determine which word comes first, if you were to order them alphabetically, and send only that word to the OUTBOX.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "dereferencing": true,
     "comments": true,
@@ -620,6 +625,7 @@
   {
     "number": 37,
     "name": "Scavenger Chain",
+    "instructions": "Each pair on the floor contains:\n1. data\n2. the address of another one of the pairs\n\nA scrambled chain! Each thing in the INBOX is an address of one of the pairs. OUTBOX the data for that pair, and also the data in all the following pairs in the chain. The chain ends when you reach a negative address. Repeat until the INBOX is empty.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "dereferencing": true,
     "comments": true,
@@ -654,6 +660,7 @@
   {
     "number": 38,
     "name": "Digit Exploder",
+    "instructions": "Grab each number from the INBOX, and send its digits to the OUTBOX. For example, 123 becomes 1, 2, 3.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "dereferencing": true,
     "comments": true,
@@ -679,6 +686,7 @@
   {
     "number": 39,
     "name": "Re-Coordinator",
+    "instructions": "Each number in the INBOX is an address of a tile on the floor. Send to the OUTBOX the coordinates of that tile, column first, row second.\n\nFor example, and address of 6 has coordinates 2, 1. You may ask your boss for more examples.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "dereferencing": true,
     "comments": true,
@@ -703,6 +711,7 @@
   {
     "number": 40,
     "name": "Prime Factory",
+    "instructions": "For each thing in the INBOX, send its PRIME FACTORS to the OUTBOX in order from smallest to largest.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "dereferencing": true,
     "comments": true,
@@ -726,6 +735,7 @@
   {
     "number": 41,
     "name": "Sorting Floor",
+    "instructions": "For each zero terminated string in the INBOX, SORT the contents of the string, smallest first, biggest last, and put the results in the OUTBOX. Repeat for each string!",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "dereferencing": true,
     "comments": true,
