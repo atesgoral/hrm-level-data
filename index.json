@@ -163,6 +163,8 @@
   {
     "number": 11,
     "name": "Sub Hallway",
+    "instructions": "For each two things in the INBOX, first subtract the 1st from the 2nd and put the result in the OUTBOX. AND THEN, subtract the 2nd from the 1st and put the result in the OUTBOX. Repeat.\n\nYou got a new command! SUBtracts the contents of a tile on the floor FROM whatever value you're currently holding.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ" ],
     "floor": {},
     "expect": [
       {
@@ -178,6 +180,8 @@
   {
     "number": 12,
     "name": "Tetracontiplier",
+    "instructions": "For each thing in the INBOX, multiply it by 40, and put the result in the OUTBOX.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP" ],
     "floor": {},
     "expect": [
       {
@@ -193,6 +197,9 @@
   {
     "number": 13,
     "name": "Equalization Room",
+    "instructions": "Get two things from the INBOX. If they are EQUAL, put ONE of them in the OUTBOX. Discard non-equal pairs. Repeat!\n\nYou got... COMMENTS! You can use them, if you like, to mark sections of your program.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ" ],
+    "comments": true,
     "floor": {},
     "expect": [
       {
@@ -208,6 +215,9 @@
   {
     "number": 14,
     "name": "Maximization Room",
+    "instructions": "Grab TWO things form the INBOX, and put only the BIGGER of the two in the OUTBOX. If they are equal, just pick either one. Repeat!\n\nYou got a new command! Jumps only if the thing you're holding is negative. (Less than zero.) Otherwise continues to the next line.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
     "floor": {},
     "expect": [
       {
@@ -223,6 +233,9 @@
   {
     "number": 16,
     "name": "Absolute Positivity",
+    "instructions": "Send each thing from the INBOX to the OUTBOX, BUT, if a number is negative, first remove its negative sign.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
     "floor": {},
     "expect": [
       {
@@ -238,6 +251,9 @@
   {
     "number": 17,
     "name": "Exclusive Lounge",
+    "instructions": "For each TWO things in the INBOX:\n\nSend a 0 to the OUTBOX if they have the same sign. (Both positive or both negative.)\n\nSend a 1 to the OUTBOX if their signs are different. Repeat until the INBOX is empty.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
     "floor": {
       "tiles": {
         "4": 0,
@@ -258,6 +274,9 @@
   {
     "number": 19,
     "name": "Countdown",
+    "instructions": "For each number in the INBOX, send that number to the OUTBOX, followed by all numbers down to (or up to) zero. It's a countdown!\n\nYou got new commands! They add ONE or subtract ONE from an item on the floor. The result is given back to you, and for your convenience, also written right back to the floor. BUMP!",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
     "floor": {},
     "expect": [
       {
@@ -273,6 +292,10 @@
   {
     "number": 20,
     "name": "Multiplication Workshop",
+    "instructions": "For each two things in the INBOX, multiply them, and OUTBOX the result. Don't worry about negative numbers for now.\n\nYou got... LABELS! They can help you remember the purpose of each tile on the floor. Just tap any tile on the floor to edit.",
+    "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    "comments": true,
+    "labels": true,
     "floor": {
       "tiles": {
         "9": 0
