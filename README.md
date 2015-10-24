@@ -9,7 +9,7 @@ Install with: `npm install hrm-level-data`
 
 Then:
 
-```
+```js
 var levels = require('hrm-level-data');
 ```
 
@@ -17,7 +17,7 @@ var levels = require('hrm-level-data');
 
 An excerpt:
 
-```
+```js
 [{
     number: 1,
     name: "Mail Room",
@@ -121,19 +121,19 @@ _Object_/_Array_. The floor grid contents. Tile values can either be numbers (e.
 
 For sparse setups, this can be an object with keys as floor tile indices:
 
-```
+```js
 tiles: { "0": "A", "10": 4 } // "A" is on tile 0, 4 is on tile 10
 ```
 
 For setups where every tile is occupied, this can be an array where indices are directly mapped to floor tiles:
 
-```
+```js
 tiles: [ "A", "E", "I", "O", "U", 0 ] // "A" is on tile 0, "E" is on tile 1, etc.
 ```
 
 For setups where almost every tile is occupied, the unoccupied tiles can be represented with nulls:
 
-```
+```js
 tiles: [ "N", "K", "A", "E", "R", "D", "O", "L", "Y", "J", null, null, 8 ]
 ```
 
