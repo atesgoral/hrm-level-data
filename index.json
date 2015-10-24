@@ -372,6 +372,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 3,
+      "rows": 2,
       "tiles": {
         "5": 0
       }
@@ -395,6 +397,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 5,
+      "rows": 2,
       "tiles": {
         "9": 0
       }
@@ -417,7 +421,11 @@
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "comments": true,
     "labels": true,
-    "floor": {},
+    "floor": {
+      "columns": 5,
+      "rows": 2,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 8, 15, 2, 0, 19, 14, 8, 4, 0, 57, 47, 20, 44, 40, 0 ],
@@ -436,7 +444,11 @@
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "comments": true,
     "labels": true,
-    "floor": {},
+    "floor": {
+      "columns": 2,
+      "rows": 5,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 5, 2, 6, 2, 4, 6, 0, 8 ],
@@ -456,6 +468,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 3,
+      "rows": 2,
       "tiles": {
         "5": 0
       }
@@ -479,6 +493,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 2,
+      "rows": 5,
       "tiles": {
         "9": 0
       }
@@ -501,7 +517,11 @@
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "comments": true,
     "labels": true,
-    "floor": {},
+    "floor": {
+      "columns": 5,
+      "rows": 2,
+      "tiles": []
+    },
     "expect": [
       {
         "inbox": [ 8, 5, 2, 3, 5, 8, 6, -1, 3, 9, 6, -1 ],
@@ -522,6 +542,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 5,
+      "rows": 3,
       "tiles": [ "N", "K", "A", "E", "R", "D", "O", "L", "Y", "J", null, null, 8 ]
     },
     "expect": [
@@ -544,6 +566,8 @@
     "comments": true,
     "labels": true,
     "floor": {
+      "columns": 5,
+      "rows": 5,
       "tiles": [ "G", "E", "T", 0, "T", "H", 0, "T", "A", "R", 0, "A", "W", "A", "K", "E", 0, "I", "S", 0, "X", "X", "X", 0 ]
     },
     "expect": [
