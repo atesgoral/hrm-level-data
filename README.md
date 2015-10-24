@@ -22,6 +22,8 @@ An excerpt:
     number: 1,
     name: "Mail Room",
     floor: {},
+    instructions: "Drag commands into this area to build a program.\n\nYour program should tell your worker to grab each thing from the INBOX, and drop it into the OUTBOX.",
+    commands: [ "INBOX", "OUTBOX" ],
     expect: [{
         inbox: [ 1, 9, 4 ],
         outbox: [ 1, 9, 4 ]
@@ -35,6 +37,10 @@ An excerpt:
 }, {
     number: 20,
     name: "Multiplication Workshop",
+    instructions: "For each two things in the INBOX, multiply them, and OUTBOX the result. Don't worry about negative numbers for now.\n\nYou got... LABELS! They can help you remember the purpose of each tile on the floor. Just tap any tile on the floor to edit.",
+    commands: [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    comments: true,
+    labels: true,
     floor: {
         columns: 5,
         rows: 2,
@@ -53,6 +59,11 @@ An excerpt:
 }, {
     number: 34,
     name: "Vowel Incinerator",
+    instructions: "Send everything from the INBOX to the OUTBOX, except the vowels.",
+    commands: [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
+    dereferencing: true,
+    comments: true,
+    labels: true,
     floor: {
         columns: 5,
         rows: 2,
