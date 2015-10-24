@@ -10,6 +10,24 @@
       "name": {
         "type": "string"
       },
+      "instructions": {
+        "type": "string"
+      },
+      "commands": {
+        "type": "array",
+        "items": {
+          "enum": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ]
+        }
+      },
+      "dereferencing": {
+        "type": "boolean"
+      },
+      "comments": {
+        "type": "boolean"
+      },
+      "labels": {
+        "type": "boolean"
+      },
       "floor": {
         "type": "object",
         "properties": {
@@ -91,6 +109,6 @@
         "required": [ "size", "speed" ]
       }
     },
-    "required": [ "number", "name", "floor", "expect", "challenge" ]
+    "required": [ "number", "name", "instructions", "commands", "floor", "expect", "challenge" ]
   }
 }
