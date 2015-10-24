@@ -560,7 +560,7 @@
   {
     "number": 30,
     "name": "String Storage Floor",
-    "instructions": "Each thing in the INBOX is an address of a tile on the floor. For each address provided in the INBOX, OUTBOX the requested item from the floow and ALL FOLLOWING items on the floor until you reach a ZERO. Repeat!",
+    "instructions": "Each thing in the INBOX is an address of a tile on the floor. For each address provided in the INBOX, OUTBOX the requested item from the floor and ALL FOLLOWING items on the floor until you reach a ZERO. Repeat!",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "dereferencing": true,
     "comments": true,
