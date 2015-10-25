@@ -79,7 +79,8 @@
               }
             ]
           }
-        }
+        },
+        "required": [ "columns", "rows" ]
       },
       "expect": {
         "type": "array",
@@ -109,6 +110,6 @@
         "required": [ "size", "speed" ]
       }
     },
-    "required": [ "number", "name", "instructions", "commands", "floor", "expect", "challenge" ]
+    "required": [ "number", "name", "instructions", "commands", "expect", "challenge" ]
   }
 }

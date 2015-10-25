@@ -4,7 +4,6 @@
     "name": "Mail Room",
     "instructions": "Drag commands into this area to build a program.\n\nYour program should tell your worker to grab each thing from the INBOX, and drop it into the OUTBOX.",
     "commands": [ "INBOX", "OUTBOX" ],
-    "floor": {},
     "expect": [
       {
         "inbox": [ 1, 9, 4 ],
@@ -25,7 +24,6 @@
     "name": "Busy Mail Room",
     "instructions": "Grab each thing from the INBOX, and drop each one into the OUTBOX.\n\nYou got a new command! You can drag JUMP's arrow to jump to different lines within your program.",
     "commands": [ "INBOX", "OUTBOX", "JUMP" ],
-    "floor": {},
     "expect": [
       {
         "inbox": [ "B", "O", "O", "T", "S", "E", "Q" ],
@@ -65,8 +63,7 @@
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "JUMP" ],
     "floor": {
       "columns": 3,
-      "rows": 1,
-      "tiles": []
+      "rows": 1
     },
     "expect": [
       {
@@ -86,8 +83,7 @@
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP" ],
     "floor": {
       "columns": 3,
-      "rows": 1,
-      "tiles": []
+      "rows": 1
     },
     "expect": [
       {
@@ -107,8 +103,7 @@
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP", "JUMPZ" ],
     "floor": {
       "columns": 3,
-      "rows": 3,
-      "tiles": []
+      "rows": 3
     },
     "expect": [
       {
@@ -128,8 +123,7 @@
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP" ],
     "floor": {
       "columns": 3,
-      "rows": 1,
-      "tiles": []
+      "rows": 1
     },
     "expect": [
       {
@@ -149,8 +143,7 @@
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP", "JUMPZ" ],
     "floor": {
       "columns": 3,
-      "rows": 3,
-      "tiles": []
+      "rows": 3
     },
     "expect": [
       {
@@ -170,8 +163,7 @@
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP" ],
     "floor": {
       "columns": 5,
-      "rows": 1,
-      "tiles": []
+      "rows": 1
     },
     "expect": [
       {
@@ -191,8 +183,7 @@
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "JUMP", "JUMPZ" ],
     "floor": {
       "columns": 3,
-      "rows": 1,
-      "tiles": []
+      "rows": 1
     },
     "expect": [
       {
@@ -212,8 +203,7 @@
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "JUMP" ],
     "floor": {
       "columns": 5,
-      "rows": 1,
-      "tiles": []
+      "rows": 1
     },
     "expect": [
       {
@@ -234,8 +224,7 @@
     "comments": true,
     "floor": {
       "columns": 1,
-      "rows": 3,
-      "tiles": []
+      "rows": 3
     },
     "expect": [
       {
@@ -256,8 +245,7 @@
     "comments": true,
     "floor": {
       "columns": 3,
-      "rows": 1,
-      "tiles": []
+      "rows": 1
     },
     "expect": [
       {
@@ -278,8 +266,7 @@
     "comments": true,
     "floor": {
       "columns": 1,
-      "rows": 3,
-      "tiles": []
+      "rows": 3
     },
     "expect": [
       {
@@ -325,8 +312,7 @@
     "comments": true,
     "floor": {
       "columns": 5,
-      "rows": 2,
-      "tiles": []
+      "rows": 2
     },
     "expect": [
       {
@@ -423,8 +409,7 @@
     "labels": true,
     "floor": {
       "columns": 5,
-      "rows": 2,
-      "tiles": []
+      "rows": 2
     },
     "expect": [
       {
@@ -446,8 +431,7 @@
     "labels": true,
     "floor": {
       "columns": 2,
-      "rows": 5,
-      "tiles": []
+      "rows": 5
     },
     "expect": [
       {
@@ -519,8 +503,7 @@
     "labels": true,
     "floor": {
       "columns": 5,
-      "rows": 2,
-      "tiles": []
+      "rows": 2
     },
     "expect": [
       {

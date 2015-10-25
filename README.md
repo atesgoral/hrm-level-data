@@ -108,7 +108,7 @@ _Boolean_. _Optional_. `true` if comments are allowed to be used in the program.
 _Boolean_. _Optional_. `true` if adding labels to floor tiles are allowed in the level.
 
 ### floor
-_Object_. The floor setup. Can be an empty object if the level doesn't make use of the floor. Has the following properties:
+_Object_. _Optional_. The floor setup. Not defined if the level doesn't make use of the floor. Has the following properties:
 
 #### columns
 _Number_. The number of columns of the floor grid.
@@ -117,7 +117,7 @@ _Number_. The number of columns of the floor grid.
 _Number_. The number of rows of the floor grid.
 
 #### tiles
-_Object_/_Array_. The floor grid contents. Tile values can either be numbers (e.g. 5), strings for letters (e.g. "E") or null. Numbers are never represented as strings (e.g. "3" won't appear).
+_Object_/_Array_. _Optional_. The initial floor contents. Tile values can either be numbers (e.g. 5), strings for letters (e.g. "E") or null. Numbers are never represented as strings (e.g. "3" won't appear).
 
 For sparse setups, this can be an object with keys as floor tile indices:
 
