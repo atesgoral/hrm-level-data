@@ -85,7 +85,7 @@
         },
         "required": [ "columns", "rows" ]
       },
-      "expect": {
+      "examples": {
         "type": "array",
         "items": {
           "type": "object",
@@ -115,7 +115,7 @@
     },
     "oneOf": [
       {
-        "required": [ "number", "name", "instructions", "commands", "expect", "challenge" ]
+        "required": [ "number", "name", "instructions", "commands", "examples", "challenge" ]
       },
       {
         "required": [ "number", "name", "cutscene" ]
