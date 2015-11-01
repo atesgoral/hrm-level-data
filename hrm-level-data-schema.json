@@ -10,6 +10,9 @@
       "name": {
         "type": "string"
       },
+      "cutscene": {
+        "type": "boolean"
+      },
       "instructions": {
         "type": "string"
       },
@@ -110,6 +113,13 @@
         "required": [ "size", "speed" ]
       }
     },
-    "required": [ "number", "name", "instructions", "commands", "expect", "challenge" ]
+    "oneOf": [
+      {
+        "required": [ "number", "name", "instructions", "commands", "expect", "challenge" ]
+      },
+      {
+        "required": [ "number", "name", "cutscene" ]
+      }
+    ]
   }
 }

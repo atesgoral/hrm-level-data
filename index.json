@@ -77,6 +77,11 @@
     }
   },
   {
+    "number": 5,
+    "name": "Coffee Time",
+    "cutscene": true
+  },
+  {
     "number": 6,
     "name": "Rainy Summer",
     "instructions": "For each two things in the INBOX, add them together, and put the result in the OUTBOX.\n\nYou got a new command! It ADDs the contents of a tile on the floor to whatever value you're currently holding.",
@@ -259,6 +264,11 @@
     }
   },
   {
+    "number": 15,
+    "name": "Employee Morale Insertion",
+    "cutscene": true
+  },
+  {
     "number": 16,
     "name": "Absolute Positivity",
     "instructions": "Send each thing from the INBOX to the OUTBOX, BUT, if a number is negative, first remove its negative sign.",
@@ -303,6 +313,11 @@
       "size": 12,
       "speed": 28
     }
+  },
+  {
+    "number": 18,
+    "name": "Sabbatical Beach Paradise",
+    "cutscene": true
   },
   {
     "number": 19,
@@ -495,6 +510,11 @@
     }
   },
   {
+    "number": 27,
+    "name": "Midnight Petroleum",
+    "cutscene": true
+  },
+  {
     "number": 28,
     "name": "Three Sort",
     "instructions": "For each THRREE THINGS in the INBOX, send them to the OUTBOX in order from smallest to largest.",
@@ -613,6 +633,11 @@
       "size": 16,
       "speed": 393
     }
+  },
+  {
+    "number": 33,
+    "name": "Where's Carol?",
+    "cutscene": true
   },
   {
     "number": 34,
@@ -834,5 +859,10 @@
       "size": 34,
       "speed": 714
     }
+  },
+  {
+    "number": 42,
+    "name": "End Program. Congratulations.",
+    "cutscene": true
   }
 ]
