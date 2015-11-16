@@ -784,7 +784,7 @@
   {
     "number": 39,
     "name": "Re-Coordinator",
-    "instructions": "Each number in the INBOX is an address of a tile on the floor. Send to the OUTBOX the coordinates of that tile, column first, row second.\n\nFor example, and address of 6 has coordinates 2, 1. You may ask your boss for more examples.",
+    "instructions": "Each number in the INBOX is an address of a tile on the floor. Send to the OUTBOX the coordinates of that tile, column first, row second.\n\nFor example, an address of 6 has coordinates 2, 1. You may ask your boss for more examples.",
     "commands": [ "INBOX", "OUTBOX", "COPYFROM", "COPYTO", "ADD", "SUB", "BUMPUP", "BUMPDN", "JUMP", "JUMPZ", "JUMPN" ],
     "dereferencing": true,
     "comments": true,
