@@ -3,6 +3,7 @@
   "version": "1.1.1",
   "description": "Human Resource Machine level data",
   "main": "index.json",
+  "files": [ "index.json" ],
   "repository": {
     "type": "git",
     "url": "https://github.com/atesgoral/hrm-level-data.git"
