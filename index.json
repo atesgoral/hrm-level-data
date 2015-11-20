@@ -706,7 +706,7 @@
       }
     },
     "examples": [
-     { 
+      {
         "inbox": [ "U", "N", "I", "X", 0, "U", "N", "T", "I", "E", 0 ],
         "outbox": [ "U", "N", "I", "X" ],
         "desc": "first word shorter, first word"
@@ -746,7 +746,7 @@
         "outbox": [ "U", "N", "I", "T" ],
         "desc": "first long prefix, second word"
       }
-    ]
+    ],
     "challenge": {
       "size": 39,
       "speed": 109
