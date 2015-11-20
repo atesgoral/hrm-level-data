@@ -706,11 +706,47 @@
       }
     },
     "examples": [
-      {
+     { 
         "inbox": [ "U", "N", "I", "X", 0, "U", "N", "T", "I", "E", 0 ],
-        "outbox": [ "U", "N", "I", "X" ]
+        "outbox": [ "U", "N", "I", "X" ],
+        "desc": "first word shorter, first word"
+      },
+      {
+        "inbox": [ "U", "N", "S", "E", "T", 0, "U", "N", "D", "O", 0 ],
+        "outbox": [ "U", "N", "D", "O" ],
+        "desc": "second word shorter, second word"
       }
-    ],
+      {
+        "inbox": [ "U", "N", "D", "E", "R", 0, "U", "N", "S", "E", "T", 0 ],
+        "outbox": [ "U", "N", "D", "E", "R" ],
+        "desc": "same length, first word"
+      },
+      {
+        "inbox": [ "U", "N", "I", "T", "E", 0, "U", "N", "I", "O", "N", 0 ],
+        "outbox": [ "U", "N", "I", "O", "N" ],
+        "desc": "same length, second word"
+      },
+      {
+        "inbox": [ "U", "N", "C", "A", "P", 0, "U", "N", 0 ],
+        "outbox": [ "U", "N" ],
+        "desc": "first prefix, second word"
+      },
+      {
+        "inbox": [ "D", "I", "R", "T", 0, "U", "N", "C", "A", "P", 0 ],
+        "outbox": [ "D", "I", "R", "T" ],
+        "desc": "diff first, first word"
+      },
+      {
+        "inbox": [ "U", "N", "Z", "I", "P", 0, "D", "I", "R", "T", 0 ],
+        "outbox": [ "D", "I", "R", "T" ],
+        "desc": "diff first, second word"
+      },
+      {
+        "inbox": [ "U", "N", "I", "T", "S", 0, "U", "N", "I", "T", 0 ],
+        "outbox": [ "U", "N", "I", "T" ],
+        "desc": "first long prefix, second word"
+      }
+    ]
     "challenge": {
       "size": 39,
       "speed": 109
@@ -746,6 +782,10 @@
       {
         "inbox": [ 23, 0 ],
         "outbox": [ "A", "P", "E", "E", "S", "C", "A", "P", "E" ]
+      },
+      {
+        "inbox": [ 0, 23 ],
+        "outbox": [ "E", "S", "C", "A", "P", "E", "A", "P", "E" ]
       }
     ],
     "challenge": {
