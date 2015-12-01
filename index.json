@@ -712,6 +712,11 @@
         "desc": "first word shorter, first word"
       },
       {
+        "inbox": [ "U", "N", "D", "O", 0, "U", "N", "C", "L", "E", 0],
+        "outbox": [ "U", "N", "C", "L", "E" ],
+        "desc": "first word shorter, second word"
+      },
+      {
         "inbox": [ "U", "N", "S", "E", "T", 0, "U", "N", "D", "O", 0 ],
         "outbox": [ "U", "N", "D", "O" ],
         "desc": "second word shorter, second word"
@@ -750,6 +755,31 @@
         "inbox": [ "U", "N", "I", "T", "S", 0, "U", "N", "I", "T", 0 ],
         "outbox": [ "U", "N", "I", "T" ],
         "desc": "first long prefix, second word"
+      },
+      {
+        "inbox": [ "U", "N", "D", "O", 0, "U", "N", "I", "T", 0 ],
+        "outbox": [ "U", "N", "D", "O" ],
+        "desc": "two short, first word"
+      },
+      {
+        "inbox": [ "D", "I", "R", "T", 0, "U", "N", 0 ],
+        "outbox": [ "D", "I", "R", "T"],
+        "desc": "diff first + two short, first word"
+      },
+      {
+        "inbox": [ "D", "I", "R", "T", 0, "D", "I", "R", "T", 0 ],
+        "outbox": [ "D", "I", "R", "T"],
+        "desc": "two short identical"
+      },
+      {
+        "inbox": [ "U", "N", "C", "L", "E", 0, "U", "N", "C", "L", "E", 0 ],
+        "outbox": [ "U", "N", "C", "L", "E"],
+        "desc": "two long identical"
+      },
+      {
+        "inbox": [ "U", "N", 0, "D", "I", "R", "T", 0 ],
+        "outbox": [ "D", "I", "R", "T"],
+        "desc": "prefix + diff first, second word"
       }
     ],
     "challenge": {
