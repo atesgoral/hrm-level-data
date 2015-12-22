@@ -26,8 +26,8 @@
     "commands": [ "INBOX", "OUTBOX", "JUMP" ],
     "examples": [
       {
-        "inbox": [ "B", "O", "O", "T", "S", "E", "Q" ],
-        "outbox": [ "B", "O", "O", "T", "S", "E", "Q" ]
+        "inbox": [ "B", "O", "O", "T", "S", "E", "Q", "U", "E", "N", "C", "E" ],
+        "outbox": [ "B", "O", "O", "T", "S", "E", "Q", "U", "E", "N", "C", "E" ]
       }
     ],
     "challenge": {
